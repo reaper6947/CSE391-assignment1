@@ -1,0 +1,279 @@
+:root {
+  --primary: #222831;
+  --secondary: #393e46;
+  --blue: #00adb5;
+  --white: #eeeeee;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222831;
+  margin: 0 !important;
+  color: var(--white);
+}
+section {
+  margin: 80px 10%;
+}
+
+#main-section {
+  height: 920px;
+  display: flex;
+  justify-content: space-between;
+}
+.s-content-1 {
+  font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #eeeeee;
+}
+#personal-section {
+  color: black;
+}
+p {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+#personal-info {
+  background-color: eeeeee;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 50px;
+}
+
+#toggle-info {
+  padding: 20px;
+  margin: 10px 0px;
+}
+
+/* Add hover effect to the button */
+button:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+/* Add a custom font */
+@import url("https://fonts.googleapis.com/css2?family=poppins&display=swap");
+
+/* Use the custom font */
+body,
+h1,
+p,
+button {
+  font-family: "poppins", sans-serif;
+}
+
+.nav-item {
+  text-decoration: none;
+  list-style: none;
+}
+li > a:link {
+  text-decoration: none;
+}
+
+.text-bold {
+  font-weight: bolder;
+}
+span {
+  color: var(--secondary);
+}
+
+.btn {
+  background-color: var(--blue);
+  padding: 10px;
+  outline: None;
+  border: none;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.cover {
+  background-color: var(--white);
+}
+
+nav {
+  background-color: var(--blue);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+}
+.nav-list > li {
+  margin: 0px 20px;
+}
+
+.brand-logo {
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: var(--secondary);
+}
+.brand-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.s-content-1 {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.slide-in-left {
+  position: relative;
+  animation-duration: 1s;
+  animation-name: slide-in-left;
+}
+
+@keyframes slide-in-left {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.slide-in-right {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 1s;
+  animation-name: slide-in-right;
+}
+
+@keyframes slide-in-right {
+  0% {
+    right: -1000px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.div-h {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+  line-height: 60px;
+}
+.image:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transform: scale(1.1);
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+/* quote css*/
+blockquote {
+  color: rgba(250, 200, 130, 0.6);
+  font-family: Tahoma, sans-serif;
+  font-size: 40px;
+  width: 60%;
+  margin: 0 auto;
+}
+blockquote h1 {
+  font-size: 4rem;
+}
+blockquote p {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+blockquote p::before,
+blockquote p::after {
+  content: "“";
+  font-family: Georgia;
+  font-size: 8rem;
+  margin: -2rem 0 0 -4rem;
+  position: absolute;
+  opacity: 0.5;
+}
+
+blockquote p::after {
+  content: "”";
+  margin: -1rem -4rem 0 0;
+}
+
+blockquote cite {
+  font-size: 1.5rem;
+}
